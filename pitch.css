@@ -1,0 +1,434 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    height: auto;
+    width: auto;
+  }
+p.grove{
+  
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    border-radius: 20px;
+    border-style: groove 5px;
+    text-align:center ;
+    position:fixed;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    line-height: 1.7;
+    display:block;
+   
+    
+}
+/*Line-gradiant*/
+.line-2 {
+  background: fixed;
+  background-size: cover;
+ background: linear-gradient(247.28deg,
+ #dadada 37.32%,
+ #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+ opacity: 0.5;
+position:fixed;
+
+width: 100%;
+height: 1073px;
+
+}
+.line-1{
+  background: fixed;
+  background-size: cover;
+  background: linear-gradient(147.28deg,
+  #dadada 37.32%,
+  #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+  opacity: 0.6;
+  position:fixed;
+  width: 100%;
+  height: 1073px
+}
+.line-3{
+  background: fixed;
+  background-size: cover;
+  background: linear-gradient(197.28deg,
+  #dadada 37.32%,
+  #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+  opacity: 0.4;
+  position:fixed;
+  width: 100%;
+  height: 1073px
+}
+.line-4{
+  background: fixed;
+  background-size: cover;
+  background: linear-gradient(117.28deg,
+  #dadada 37.32%,
+  #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+  opacity: 0.7;
+  position:fixed;
+  width: 100%;
+  height: 1073px
+}
+.line-5{
+  background: fixed;
+  background-size: cover;
+  background: linear-gradient(197.28deg,
+  #dadada 37.32%,
+  #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+  opacity: 0.4;
+  position:fixed;
+  width: 100%;
+  height: 1073px
+}
+
+/*Photo*/
+/*.card {
+  position: absolute;
+  top: 280px;
+  left: 45px;
+  width: 10%;
+  min-width: 6%;
+  max-height: min-content;
+  background: url("kingMarius.jpeg") no-repeat;
+  display: inline-block;
+}
+.card:hover {
+  background: url("marius-two.jpeg") no-repeat;
+}*/
+
+
+
+
+/*Clock*/
+
+.photo-main {
+  position: absolute;
+  top: 280px;
+  left: 45px;
+  width: 10%;
+  min-width: 6%;
+  max-height: min-content;
+  
+  border-radius: 40px;
+  box-shadow: 7px 9px 12px gray;
+ }  
+ @media only screen and (max-width: 450px) {
+   .photo-main {
+     width: 100%;
+   }
+ }    
+ /*NavBar Area*/
+         nav{
+            mix-blend-mode: normal;
+            text-shadow: 3px 3px 5px rgb(83, 82, 82);
+            opacity: 0.7;
+            background: radial-gradient(50% 50% at 50% 50%,
+            #a7a6a6 18.23%, rgba(209, 206, 206, 0) 100%);
+            border-bottom-style: double white;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 10vh;
+            background-color: #9d9a9a;
+            font-family: 'Poppins', sans-serif;
+            opacity: 0.6;
+           
+           
+          }
+          nav ul li a{
+            text-decoration: rgb(84, 84, 85);
+            color: rgb(253, 253, 253);
+            padding: 30px;
+            
+            margin-top:  35px;
+            letter-spacing: 3,5px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-shadow: #5e5459 5px 5px;
+           
+           
+            
+          }
+          
+          .logo{
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size:29px;
+            font-weight: bold;
+            text-decoration: underline overline;
+            text-shadow: #5e5459 5px 5px;
+           
+        
+          }
+          
+          .nav-links{
+            display: flex;
+            justify-content: space-around;
+            width: 35%;
+          }
+          
+          .nav-links li{
+            list-style:none;
+            
+          }
+          .nav-links a:hover{
+            color: rgb(34, 10, 221);
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight:bolder;
+            font: size 32px;
+          }
+          
+          .burger{
+            display:none;
+            cursor: pointer;
+          }
+          
+          .burger div{
+            width:25px;
+            height:3px;
+            background-color:#fff;
+            margin: 5px;
+            transition: all 0.3s ease
+            
+          }
+          
+          @media screen and (max-width:1024px){
+            .nav-links{
+              width:60%;
+            }
+          }
+          
+          @media screen and (max-width:768px){
+            body{
+              overflow-x: hidden;
+            }
+            .nav-links{
+              position:absolute;
+              right:0px;
+              height:92vh;
+              top: 8vh;
+              background-color:#5e5459;
+              display:flex;
+              flex-direction: column;  
+              align-items: center;
+              width:50%;
+              transform: translateX(100%);
+              transition: transform 0.5s ease-in;
+            }
+            .nav-links li{
+              opacity: 0;
+            }
+            .burger{
+              display:block;
+            }
+          }
+          
+          .nav-active{
+            transform: translateX(0%);
+          }
+          
+          @keyframes navLinkFade{
+            from{
+              opacity:0;
+              transform: translateX(50px);
+            }
+            to{
+              opacity: 1;
+              transform: translateX(0px);
+            }
+          }
+          
+          .toggle .line1{
+            transform: rotate(-40deg) translate(-5px,6px);
+          }
+          
+          .toggle .line2{
+            transform: rotate(90deg) translate(0px,0px);
+          }
+          
+          .toggle .line3{
+            transform: rotate(35deg) translate(-5px,-6px);
+          }
+          
+
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+   /*Pitch Area + decoration */ 
+    
+
+  
+ 
+    /* Floating upwards light/water effect */
+.light {
+    position: absolute;
+    width: 0px;
+    opacity: .75;
+    background-color: rgb(185, 183, 183);
+    box-shadow: #939898 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+  
+  .x1{
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+   -webkit-transform: scale(1.0);
+   -moz-transform: scale(1.0);
+   -o-transform: scale(1.0);
+  transform: scale(1.0);
+  }
+  
+  .x2{
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+  }
+  
+  .x3{
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
+  }
+  
+  .x4{
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+  }
+  
+  .x5{
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
+  }
+  
+  .x6{
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
+  }
+  
+  .x7{
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
+  }
+  
+  .x8{
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
+  }
+  
+  .x9{
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+  }
+  
+  button:focus{
+  outline: none;
+  }
+  
+  @-webkit-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+  }
+  @-moz-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+  }
+  @-o-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+  }
+  @keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+  }
+  
+  

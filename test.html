@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <!--
+    <div class="container">
+        <div class="button">
+            <svg viewbox="0 0 210 60">
+                <text x="10" y="45">Per Marius</text>
+            </svg>
+        </div>
+        <div class="button">
+            <svg viewbox="0 0 210 60">
+                <text x="10" y="45">Shop</text>
+            </svg>
+        </div>
+        <div class="button">
+            <svg viewbox="0 0 210 60">
+                <text x="10" y="45">Portfolio</text>
+            </svg>
+        </div>
+        <div class="button">
+            <svg viewbox="0 0 210 60">
+                <text x="10" y="45">Contact</text>
+            </svg>
+        </div>
+    </div>
+    -->
+    <span><span></span></span>
+<div class="wrap">
+  <a href="#"><div></div></a>
+  <a href="#"><div></div></a>
+  <a href="#"><div></div></a>
+  <a href="#"><div></div></a>
+  <a href="#"><div></div></a>
+</div>
+<div class="wrapper">
+    <div class="display">
+      <div id="time"></div>
+    </div>
+    <span></span>
+    <span></span>
+  </div>
+
+  <script>
+    setInterval(()=>{
+      const time = document.querySelector(".display #time");
+      let date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      let day_night = "AM";
+      if(hours > 24){
+        day_night = "PM";
+        hours = hours - 24;
+      }
+      if(seconds < 10){
+        seconds = "0" + seconds;
+      }
+      if(minutes < 10){
+        minutes = "0" + minutes;
+      }
+      if(hours < 10){
+        hours = "0" + hours;
+      }
+      time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+    });
+  </script>
+
+
+</body>
+<script src="test.js"></script>
+</html>
