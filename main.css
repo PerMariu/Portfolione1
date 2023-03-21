@@ -3,23 +3,25 @@
   padding:0;
   font-family:verdana;
   font-family: "Poppins", sans-serif;
-
+  
   }
   html{
+    height: 100%;
     background-attachment: fixed;
     background: linear-gradient(247.28deg,
     #dadada 37.32%,
     #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
-    opacity: 0.6;
+    opacity: 0.8;
     width: 100%;
-    height: 1073px;
- 
+    height: 1073px;                
+  
   }
   /**/  
+  
   .photo{
-    height: 28%;
+    height: 30%;
     width: auto;
-    top: 250px;
+    top: 280px;
     left: 150px;
     border-radius: 40px;
     position:absolute;
@@ -27,12 +29,65 @@
   }
  
 /*    */
-   /* Text section*/
-  
-header{
-
-
+.collapsible  {
+  top: 480px;
+  right: 250px;
+  position: relative;
+  float: right;
+  background-color: rgb(107, 106, 106);
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 120px;;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  /**/
 }
+.active, .collapsible:hover {
+  background-color: #555;
+  
+}
+
+.content  {
+  top: 540px;
+  right:70px;
+  position: relative;
+  float: right;
+  padding: 10px 18px;
+  margin: 5px;
+  width: 40%;
+  display: none;
+  border-radius: 20px;
+  border-right: #000000 2px;
+  overflow: hidden;
+  background-color: #b6b6b6;
+  font-size: 16px;
+  color: #000000;
+}
+
+/*test area*/
+
+
+
+
+  /* code icons*/
+  .contain{
+    
+    top: 490px;
+    position: relative;
+    float: right;
+    width: 0px;
+    line-break:  5px solid #414141;
+    padding: 14px;
+    text-align: center;
+    margin: 20px;
+    width: 36px;
+   }
+
   nav{
     mix-blend-mode:normal;
     text-shadow: 3px 3px 5px rgb(83, 82, 82);
@@ -61,9 +116,10 @@ header{
   .logo{
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size:26px;
     text-decoration: underline overline;
+    text-shadow: #5e5459 5px 5px;
   }
   .nav-links{
     display: flex;
@@ -80,9 +136,10 @@ header{
   .nav-links a:hover{
     color: rgb(34, 10, 221);
     text-decoration:underline;
-    letter-spacing: 2.4px;
-    font-weight:bolder;
-    font: size 28px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size:  27px;
+    
   }
   
   .burger{
@@ -96,7 +153,7 @@ header{
     background-color:rgb(252, 252, 252);
     margin: 5px;
     
-    transition: all 0.3s ease
+    transition: all 0.2s ease
     
     
   }
@@ -114,13 +171,13 @@ header{
     .nav-links{
       position:absolute;
       right:0px;
-      height: 65vh;
+      height: 56vh;
       top: 10vh;
-      background-color:#6a6768;
+      background-color:#7d7d7d;
       display:flex;
       flex-direction: column;  
       align-items: center;
-      width:30%;
+      width:25%;
       transform: translateX(100%);
       transition: transform 0.7s ease-in;
     }
@@ -325,7 +382,7 @@ transform: translate(-50%, -50%);
 font-family: 'Roboto', sans-serif;
 font-weight: 300;
 color: rgb(0, 0, 0);
-font-size: 2em;
+font-size: 2.5em;
 font-weight: bolder;
 
 }
@@ -477,53 +534,7 @@ to{opacity: 1;}
 
 
 
-.collapsible {
-  top: 395px;
-  position: relative;
-  float: right;
-  background-color: rgb(177, 177, 177);
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 126px;
-  border-radius: 40px;
-  text-align: center;
-  outline: none;
-  font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
-.active, .collapsible:hover {
-  
-  background-color: #555;
-}
-
-.content {
-  top: 395px;
-  position: relative;
-  float: right;
-  width: 190px;
-  margin: 10px;
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #dfdfdf;
-  border-radius: 20px;
-  border-color: #414141 .125rem;
-}
-
-/* code icons*/
-.contain{
-  top: 330px;
-  position: relative;
-  float: right;
-  width: 0px;
-  line-break:  5px solid #414141;
-  padding: 14px;
-  text-align: center;
-  margin: 20px;
-  width: 36px;
- }
   /* Collapsible
 .test{
   height: 40%;
@@ -532,8 +543,3 @@ to{opacity: 1;}
 
 
 
-.line-1{
- 
-
-
-}
