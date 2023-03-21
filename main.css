@@ -10,17 +10,18 @@
     background: linear-gradient(247.28deg,
     #dadada 37.32%,
     #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
-    opacity: 0.6;
+    opacity: 0.8;
     width: 100%;
     height: 1073px;
- 
+  
   }
   /**/  
+  
   .photo{
     height: 28%;
     width: auto;
-    top: 250px;
-    left: 150px;
+    top: 280px;
+    left: 180px;
     border-radius: 40px;
     position:absolute;
     box-shadow: 4px rgb(85, 68, 68) 4px;
@@ -28,8 +29,58 @@
  
 /*    */
    /* Text section*/
+   .collapsible {
+    
+    align-items: center;
+    top: 435px;
+    position: relative;
+    float: right;
+    background-color: rgb(177, 177, 177);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 126px;
+    border-radius: 40px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
   
-h
+  .active, .collapsible:hover {
+    
+    background-color: #555;
+  }
+  
+  .content {
+    
+    top: 435px;
+    position: relative;
+    float: right;
+    width: 190px;
+    margin: 10px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+    border-color: #414141 .125rem;
+  }
+  
+  /* code icons*/
+  .contain{
+    
+    top: 330px;
+    position: relative;
+    float: right;
+    width: 0px;
+    line-break:  5px solid #414141;
+    padding: 14px;
+    text-align: center;
+    margin: 20px;
+    width: 36px;
+   }
+
   nav{
     mix-blend-mode:normal;
     text-shadow: 3px 3px 5px rgb(83, 82, 82);
@@ -474,53 +525,7 @@ to{opacity: 1;}
 
 
 
-.collapsible {
-  top: 395px;
-  position: relative;
-  float: right;
-  background-color: rgb(177, 177, 177);
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 126px;
-  border-radius: 40px;
-  text-align: center;
-  outline: none;
-  font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
-.active, .collapsible:hover {
-  
-  background-color: #555;
-}
-
-.content {
-  top: 395px;
-  position: relative;
-  float: right;
-  width: 190px;
-  margin: 10px;
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #dfdfdf;
-  border-radius: 20px;
-  border-color: #414141 .125rem;
-}
-
-/* code icons*/
-.contain{
-  top: 330px;
-  position: relative;
-  float: right;
-  width: 0px;
-  line-break:  5px solid #414141;
-  padding: 14px;
-  text-align: center;
-  margin: 20px;
-  width: 36px;
- }
   /* Collapsible
 .test{
   height: 40%;
@@ -529,8 +534,3 @@ to{opacity: 1;}
 
 
 
-.line-1{
- 
-
-
-}
