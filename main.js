@@ -40,7 +40,7 @@ const navSlide = () => {
       moreText.style.display = "inline";
     }
   }
-
+  //collapsible
 
   
 var coll = document.getElementsByClassName("collapsible");
