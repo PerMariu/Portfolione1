@@ -6,7 +6,16 @@
     height: auto;
     width: auto;
   }
-  
+  html{
+    height: 100%;
+    background-attachment: fixed;
+    background: linear-gradient(247.28deg,
+    #dadada 37.32%,
+    #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+    opacity: 0.8;
+    width: 100%;
+    height: 1074px; 
+  }       
 /*scripts*/
   .container{
     top: 150px;
@@ -19,11 +28,7 @@
     text-align: center;
     margin: auto;
     width: 36px;
-
-   }
-   
-/*
- 
+   }/*
 */
   
 p{
@@ -38,44 +43,7 @@ p{
     vertical-align: middle;
     font-weight: bolder 700;
 
-}
-
-
-
-
-.line-2 {
-  
-  background-size: cover;
- background: linear-gradient(247.28deg,
- #dadada 37.32%,
- #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
- opacity: 0.5;
-position: relative;
-
-width: 100%;
-height: 1073px;
-
-}
-.line-1{
- 
-  background-size: cover;
- background: linear-gradient(147.28deg,
- #dadada 37.32%,
- #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
- opacity: 0.6;
-position: absolute;
-
-width: 100%;
-height: 1073px
-
-}
-      /*test Area*/
-  
-      
-      
-      
-      
-      
+} /*test Area*/
       
    /*  text area*/
 
@@ -86,6 +54,7 @@ height: 1073px
       }
 
       /*test Area*/
+      /*
       #img{
         position: relative;
         display: flex;
@@ -93,7 +62,7 @@ height: 1073px
         max-inline-size: 100%;
         
         /* test*/
-        
+        /*
       }
      .img{
         position: absolute;
@@ -202,7 +171,7 @@ nav ul li a{
   letter-spacing: 5px;
   font-size:26px;
   text-decoration: underline overline;
-  text-shadow: #5e5459 5px 5px;
+  
 
 }
 
@@ -221,7 +190,7 @@ nav ul li a{
   text-decoration: none;
   letter-spacing: 3px;
   font-weight:bolder;
-  font-size 32px;
+  font-size: 32px;
 }
 
 .burger{
@@ -605,4 +574,64 @@ to{opacity: 1;}
 30%{opacity: 1;}
 80%{opacity: .9;}
 100%{opacity: 1;}
+}
+
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+
+.carousel {
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
 }
