@@ -15,13 +15,13 @@
     opacity: 0.8;
     width: 100%;
     height: 1074px; 
-  }       
+  } 
+     
 /*scripts*/
   .container{
     top: 150px;
     position: relative;
     float: right;
-    
     width: 0px;
     line-break:  3px solid #414141;
     padding: 14px;
