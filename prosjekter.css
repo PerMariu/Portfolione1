@@ -6,24 +6,29 @@
     height: auto;
     width: auto;
   }
-  
+  html{
+    height: 100%;
+    background-attachment: fixed;
+    background: linear-gradient(247.28deg,
+    #dadada 37.32%,
+    #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
+    opacity: 0.8;
+    width: 100%;
+    height: 1074px; 
+  } 
+     
 /*scripts*/
   .container{
     top: 150px;
     position: relative;
     float: right;
-    
     width: 0px;
     line-break:  3px solid #414141;
     padding: 14px;
     text-align: center;
     margin: auto;
     width: 36px;
-
-   }
-   
-/*
- 
+   }/*
 */
   
 p{
@@ -38,44 +43,7 @@ p{
     vertical-align: middle;
     font-weight: bolder 700;
 
-}
-
-
-
-
-.line-2 {
-  
-  background-size: cover;
- background: linear-gradient(247.28deg,
- #dadada 37.32%,
- #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
- opacity: 0.5;
-position: relative;
-
-width: 100%;
-height: 1073px;
-
-}
-.line-1{
- 
-  background-size: cover;
- background: linear-gradient(147.28deg,
- #dadada 37.32%,
- #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
- opacity: 0.6;
-position: absolute;
-
-width: 100%;
-height: 1073px
-
-}
-      /*test Area*/
-  
-      
-      
-      
-      
-      
+} /*test Area*/
       
    /*  text area*/
 
@@ -86,14 +54,15 @@ height: 1073px
       }
 
       /*test Area*/
+      /*
       #img{
         position: relative;
         display: flex;
         align-items: center;
         max-inline-size: 100%;
-  
-        /* test*/
         
+        /* test*/
+        /*
       }
      .img{
         position: absolute;
@@ -110,7 +79,7 @@ height: 1073px
         position: absolute;
         top: 50px;
         left: 455px;
-        position: relative;
+       
      }
 
      .img:hover .faded {
@@ -202,7 +171,7 @@ nav ul li a{
   letter-spacing: 5px;
   font-size:26px;
   text-decoration: underline overline;
-  text-shadow: #5e5459 5px 5px;
+  
 
 }
 
@@ -221,7 +190,7 @@ nav ul li a{
   text-decoration: none;
   letter-spacing: 3px;
   font-weight:bolder;
-  font-size 32px;
+  font-size: 32px;
 }
 
 .burger{
@@ -607,159 +576,63 @@ to{opacity: 1;}
 100%{opacity: 1;}
 }
 
-#footer{
-font-family: 'Roboto', sans-serif;
-font-size: 1.2em;
-color: white;
-position: fixed;
--webkit-transform: translate(95vw,90vh);
--moz-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
-}
-/*test area*/
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
 
-header {
-  position: fixed;
-  z-index: 1000;
-  margin-left: 10px;
-}
 
 h1 {
-  font-size: 25px;
-}
-
-footer {
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
-}
-
-.scrollbar {
-  position: relative;
-  border-radius: 25px;
-  padding: 2.5px;
-  color: white;
-  background-color: #333;
-  width: 150px;
-  height: 10px;
-  top: calc(5vh + 5px);
-  left: 10px;
   text-align: center;
-  cursor: pointer;
+  margin-bottom: 1.5em;
 }
 
-::-webkit-scrollbar {
-  display: none;
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
 }
 
-
-
-
-
-
-.container {
-  background-color: #000;
-}
-
-.wrapper {  
+.carousel {
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
   display: flex;
-  position: relative;
-  
-  height: 80vh;
-  
-/*   // all 800px elements + all 100vw elements + margins-right on all but the last element */
-  width: calc( (800px * 8) + ((100vw - 20px) * 3) + (10px * 10) );
-/*   width: 400px; */
-  
-  padding: 0px 10px;
-  
-  border-top: 10vh white solid;
-  border-bottom: 10vh white solid; 
+  flex-direction: column;
+  align-items: center;
 }
-
-.thumbnail {
-  display: inline-block;
-  float: left;
-  
-  height: 80vh;
-  
-/*   // will become 800px in width because of the padding */
-  width: 300px;
-  color: white;
-
-  padding: 10px;
-  font-weight: 800;
-  
-  border-radius: 10px;
-  
-  margin-right: 40px;
-  
-   opacity: 0.8;
+.carousel > * {
+  flex: 0 0 auto;
 }
-
-.thumbnail:nth-child(1) {
-    background-color: red;
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
-
-.thumbnail:nth-child(2) {
-    background-color: navy;
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
 }
-
-.thumbnail:nth-child(3) {
-    background-color: gray;
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-
-.thumbnail:nth-child(4) {
-    background-color: orange;
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
 }
-
-.thumbnail:nth-child(5) {
-    background-color: purple;
-}
-
-.thumbnail:nth-child(6) {
-    background-color: black;
-}
-
-.thumbnail:nth-child(7) {
-    background-color: green;
-}
-
-.thumbnail:nth-child(8) {
-    background-color: darkred;
-}
-
-.thumbnail:nth-child(9) {
-    background-color: teal;
-}
-
-.thumbnail:nth-child(10) {
-    background-color: steelblue;
-}
-
-.thumbnail:nth-child(11) {
-    background-color: salmon;
-}
-
-.thumbnail:last-child {
-  margin-right: 0px;
-}
-
-
-
-.full {
-/*   // the second extra '-20px' on here is just related to the fake-pinning and having space to the right side, when it happens */
-  width: calc(100vw - 20px - 20px);
-}
-
-.newdiv {
-  height: 300px;
-  background: black;
+.carousel nav button {
+  padding: auto;
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: rgb(19, 18, 18);
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
 }
